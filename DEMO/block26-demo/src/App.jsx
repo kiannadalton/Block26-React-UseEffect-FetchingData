@@ -4,15 +4,23 @@ import TaskList from "./components/TaskList";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  useEffect(()=>{
+  useEffect(() => {
     const getTasks = async () => {
       try {
-        const response = await fetch()
+        const response = await fetch(
+          "https://todo-api-ur6k.onrender.com/api/todos"
+        );
+        // the response is an array, so we don't need to dig into an object (like what we did with .data in previous assignments). Make sure to console.log the response to see where the data is
+        const json = await response.json();
+
+        setTasks(json);
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
-    }
-  }, [])
+    };
+    getTasks();
+    // empty array helps to run useEffect once
+  }, []);
 
   return (
     <div>
