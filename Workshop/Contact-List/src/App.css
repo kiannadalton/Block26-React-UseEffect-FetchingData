@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(110, 123, 95);
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactTable {
+  margin: auto;
+  width: 60%;
+  background-color: bisque;
+  padding: 20px;
+  border: solid 2px;
+}
+
+.contactTable td {
+  width: 33%;
+}
+
+th {
+  font-size: 30px;
+  border-bottom: solid 2px black;
+}
+
+.tableCategories {
+  font-weight: bold;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.contactTbody {
+  padding-top: 50px;
+}
+
+td {
+  padding-top: 5px;
+}
+
+.contactOption:hover {
+  text-decoration: underline;
+}
+
+.selectedContact {
+  margin: auto;
+  margin-top: 20px;
+  width: 40%;
+  background-color: rgb(244, 203, 154);
+  padding: 20px;
+  border: solid 2px;
+}
+
+button {
+  background-color: bisque;
+  border: solid black 2px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+button:hover {
+  background-color: rgb(219, 182, 138);
+}
+
+h2 {
+  margin-top: 0px;
+}
